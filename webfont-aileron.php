@@ -11,7 +11,7 @@ GitHub Plugin URI: https://github.com/eracom/webfont-aileron
  
 function load_aileron_webfont() {
 	
-	wp_enqueue_style( 'aileron-font', plugin_dir_path( __FILE__ ).'/aileron/webfont.css' );
+	wp_enqueue_style( 'aileron-font', plugin_dir_url( __FILE__ ).'aileron/webfont.css' );
         
 }
 add_action( 'wp_enqueue_scripts', 'load_aileron_webfont', 11 );
